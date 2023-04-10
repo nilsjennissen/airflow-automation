@@ -44,7 +44,7 @@ Before running this project, you must have the following:
 │   └── ml_clustering_workflow.py
 ├── logs
 │   └── ...
-├── scripts
+├── src 
 │   ├── extract_data.py
 │   ├── transform_data.py
 │   ├── train_model.py
