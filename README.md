@@ -27,9 +27,13 @@ Before running this project, you must have the following:
 
 1. Clone the project repository to your local machine
 2. Create a Python virtual environment and activate it
+2. Create a conda environment with 'conda create -c conda-forge -n airflow python=3.9'
+3. Install Airflow - follow this instruction (Link)[https://airflow.apache.org/docs/apache-airflow/stable/start.html] (replace 3.7 with 3.9)
+
 3. Install the necessary packages by running pip install -r requirements.txt
 4. Configure your AWS credentials by running aws configure and entering your access and secret keys
 5. Configure your Airflow environment by setting up the Airflow home directory, creating the dags folder, and updating the airflow.cfg file with your S3 bucket information.
+6. in the airflow.cfg link the dags/folder to this .
 6. Running the Project
 7. Start the Airflow webserver by running airflow webserver -p 8080
 8. Start the Airflow scheduler by running airflow scheduler
@@ -44,7 +48,7 @@ Before running this project, you must have the following:
 │   └── ml_clustering_workflow.py
 ├── logs
 │   └── ...
-├── scripts
+├── src 
 │   ├── extract_data.py
 │   ├── transform_data.py
 │   ├── train_model.py
