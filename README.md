@@ -6,8 +6,8 @@ This project is an end-to-end machine learning workflow using Apache Airflow. Th
 
 This project follows the following tasks:
 
-1. Extract data from a Bronze layer in an S3 bucket (raw csv/json...)
-2. Transform the data by joining it with other data and saving it in a Silver layer in an S3 bucket in Parquet format with the necessary splits for model training
+1. Extract data from csv file
+2. Transform the data for further processing
 3. Train a machine learning clustering algorithm on the transformed data
 4. Track parameters and metrics, such as the accuracy of the clustering algorithm, using logs
 5. Deploy the model to production as an endpoint/API container or execute a batch prediction on some data
